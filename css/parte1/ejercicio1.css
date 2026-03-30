@@ -1,0 +1,11 @@
+:root{
+    --azul: blue
+}
+
+.body{
+    background-color: yellowgreen;
+}
+
+.parrafoAzul{
+    color: var(--azul);
+}
