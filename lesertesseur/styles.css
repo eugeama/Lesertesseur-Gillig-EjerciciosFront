@@ -1,0 +1,26 @@
+:root{
+    --azulOscuro: var(#0b121f);
+    --rojo : var(#e11b53)
+}
+
+/* #ob121f */
+
+.body{
+    background-color: #0b121f;
+    color: aliceblue;
+}
+
+.header{
+    background-color: #e11b53;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    height: 10vh;
+}
+
+.img{
+    max-width: 70%;
+}
+
+.imgChica{
+    max-width: 10%;
+    
+}
