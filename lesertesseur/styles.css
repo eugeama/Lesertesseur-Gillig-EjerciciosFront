@@ -3,19 +3,31 @@
     --rojo : var(#e11b53)
 }
 
-/* #ob121f */
-
 .body{
     background-color: #0b121f;
     color: aliceblue;
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main{
+    flex: 1;
 }
 
 .header{
     background-color: #e11b53;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    height: 10vh;
+    height: 70px;
     
+}
+
+.logoHeader{
+    max-width: 15%;
+    border: 2px solid black;
+    width: auto;
+    height: 35px;
 }
 
 .imgIntroduccion{
@@ -23,14 +35,10 @@
     margin: 0;
 }
 
-.logoHeader{
-    max-width: 10%;
-    position: relative;
-}
-
 .parrafo{
-    color: yellowgreen;
+    color: #e11b53;
     margin-right: 10%;
+    
 }
 
 .introduccion{
@@ -39,4 +47,27 @@
     gap: 150px;
     padding: 0px;
     
+}
+
+.footer {
+    width:100%;
+    height: 60px;
+    background-color:#e11b53;
+    
+}
+
+@media (max-width: 768px) {
+    .introduccion {
+        flex-direction: column; 
+    }
+
+    .img {
+        max-width: 100%;
+    }
+
+    .parrafo {
+        margin-left: 0;
+        padding: 15px;
+    }
+
 }
