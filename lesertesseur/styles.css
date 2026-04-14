@@ -133,12 +133,24 @@ main{
 }
 
 .redesSociales{
-    width: auto;
     display: flex;
-    justify-content: center;
-    height: 5vh;
+    flex-direction: row;
     gap: 3vh;
-    /* margin-left: 10px; */
+    align-items: center;
+    justify-content: center;
+    width: 3vw;
+    height: auto;
+    padding: 0;
+}
+
+.redesSociales a{
+    display: inline-block;
+}
+
+.redesSociales img{
+    width: 32px;
+    height: auto;
+    display: block;
 }
 
 .textoPersonajes{
