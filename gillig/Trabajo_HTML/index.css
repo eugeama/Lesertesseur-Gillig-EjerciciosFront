@@ -1,0 +1,90 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0%;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    background-color: grey;
+    padding: 5px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+a:hover{
+    color: yellow;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;  
+}
+
+.logo{
+    margin-left: 10px;
+    margin-top: 10px;
+    display: flex;
+    width: 180px;
+    height: auto;
+}
+
+.filafotos{
+    display: flex;
+    padding: 10px;
+    margin-top: 100px;
+}
+
+.fotocolumna{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.twstinicio {
+    margin: auto;
+    border-radius: 10%;
+    width: 300px;
+    height: auto;
+    margin-top: 5px;
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
+
+    nav {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        align-items: flex-start;
+        padding: 10px 0px;
+    }
+
+    .logo {
+        margin: 10px 0;
+        width: 150px;
+        align-self: center;
+    }
+
+    .filafotos{
+    display: flex;
+    flex-direction: column;
+    }
+
+    .twstinicio {
+        width: 300px;
+    }
+}
