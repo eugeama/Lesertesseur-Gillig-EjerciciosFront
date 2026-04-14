@@ -111,9 +111,11 @@ main{
 }
 
 .redesSociales{
-    width: 32px;
-    display: block;
-    height: 20px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    height: 5vh;
+    gap: 3vh;
     /* margin-left: 10px; */
 }
 
