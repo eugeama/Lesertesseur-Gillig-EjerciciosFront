@@ -160,6 +160,11 @@ main{
 }
 
 @media (max-width: 768px) {
+    
+    .html, .body{
+        max-width: 100vw;
+    }
+
     .introduccion {
         flex-direction: column; 
     }
@@ -171,6 +176,7 @@ main{
     .parrafo {
         margin-left: 0;
         padding: 1vh;
+        max-width: 100vw;
     }
 
     .header{
@@ -187,4 +193,15 @@ main{
         width: 100vh;
     }
 
+    .imgAutoScreamers{
+        max-width: 80vw;
+    }
+
+    .imgPersonajes{
+        max-width: 80vw;
+    }
+
+    .logoEquipo{
+        max-width: 20vw;
+    }
 }
