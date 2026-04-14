@@ -1,0 +1,245 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0%;
+    background-image: url(imagenes_index/47d522f4340e9f057dc53075ab1151d9.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+@font-face{
+    font-family: EnchantedLand;
+    src: url(/home/Alumno26.LESERTESSEUR.Eugenio@ipm.edu.ar/Lesertesseur-Gillig-EjerciciosFront/gillig/Trabajo_HTML/fonts/enchanted_land/EnchantedLand.otf);
+}
+
+@font-face {
+    font-family: boucherie-flared;
+    src: url(/home/Alumno26.LESERTESSEUR.Eugenio@ipm.edu.ar/Lesertesseur-Gillig-EjerciciosFront/gillig/Trabajo_HTML/fonts/boucherie-flared_freefontdownload_org/boucherie-flared/boucherie-flared.otf);
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    background-color: rgb(5, 5, 7);
+    padding: 5px;
+}
+
+.titulo{
+    color: white;
+    text-align: center;
+    font-size: 4rem;
+    font-family: EnchantedLand, sans-serif;
+}
+
+.subtitulo_1{
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+    font-family: EnchantedLand, sans-serif;
+}
+
+.subtitulo_2{
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    font-family: boucherie-flared, sans-serif;
+}
+
+.headers{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+a headers:hover{
+    color: yellow;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;  
+}
+
+.logo{
+    margin-left: 10px;
+    display: flex;
+    width: 140px;
+    height: auto;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.galeria_centrada{
+    flex-basis: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    margin-top: 100px;
+}
+
+.galeria{
+    display: flex;
+    padding: 10px;
+}
+
+.textoinicio{
+    color: white;
+    text-align: center;
+    flex-basis: 40%; 
+    text-align: left;
+    font-size: 1.3em;
+    font-family: boucherie-flared, sans-serif;
+}
+
+.fila_mangas{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.mangas{
+    border-radius: 5%;
+    width: 200px;
+    height: 300px;
+    margin-left: 50px;
+    object-fit: cover;
+}
+
+.fotocolumna{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.twstinicio {
+    margin: auto;
+    border-radius: 10%;
+    width: 300px;
+    height: auto;
+    margin-top: 5px;
+}
+
+footer{
+    height: 70px;
+    background-color: rgb(5, 5, 7);
+    padding: 10px;
+    text-align: center;
+}
+
+.personajes{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.foto_personaje{
+    border-radius: 5%;
+    width: 200px;
+    height: 200px;
+    margin-left: 50px;
+    object-fit: cover;
+}
+
+.carta{
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
+
+    nav {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        align-items: flex-start;
+        padding: 10px 0px;
+    }
+
+    .logo {
+        margin: 10px 0;
+        width: 150px;
+        align-self: center;
+    }
+
+    .contenedor {        
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .galeria_centrada{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        margin-top: 100px;
+        flex-direction: column;
+    }
+
+    .galeria_centrada img{
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .fila_mangas{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .mangas{
+        border-radius: 5%;
+        width: 200px;
+        height: 300px;
+        margin-left: 50px;
+        margin-top: 30px;
+        object-fit: cover;
+    }
+
+    .filafotos{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .twstinicio {
+        width: 300px;
+    }
+
+    .galeria {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        margin-top: 100px;
+    }
+
+    .galeria img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto 20px auto;
+    }
+}
