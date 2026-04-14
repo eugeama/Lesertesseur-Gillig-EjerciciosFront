@@ -52,8 +52,9 @@ main{
 }
 
 .imgIntroduccion{
-    max-width: 50%;
-    margin: 0;
+    max-width: 30%;
+    margin-left: 30px;
+    margin-top: 30px;
 }
 
 .parrafo{
@@ -80,12 +81,14 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 10px;
 }
 
 .redesSociales{
-    width: 20px;
+    width: 32px;
+    display: block;
     height: 20px;
-    margin-left: 10px;
+    /* margin-left: 10px; */
 }
 
 @media (max-width: 768px) {
