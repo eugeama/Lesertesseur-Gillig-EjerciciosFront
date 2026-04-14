@@ -58,11 +58,26 @@ main{
     padding-top: 7vh;
 }
 
-.parrafoIntroduccion{
-    color: #e11b53;
+.parrafo{
+    color: aliceblue;
     margin-right: 10vh;
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.parrafoPersonajes{
+    color: aliceblue;
+    margin-left: 10vh;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 80vw;
+}
+
+.logoEquipo{
+    max-width: 8vw;
+    max-height: auto;
+    padding-left: 10vh;
+    padding-top: 5vh;
 }
 
 .titulo{
@@ -70,6 +85,13 @@ main{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 30px;
     margin-bottom: 10vh;
+}
+
+.tituloPersonajes{
+    color: #e11b53;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    padding-left: 10vh;
 }
 
 .introduccion{
@@ -117,6 +139,24 @@ main{
     height: 5vh;
     gap: 3vh;
     /* margin-left: 10px; */
+}
+
+.textoPersonajes{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 3vh;
+}
+
+.imgPersonajes{
+    max-width: 35vw;
+    padding-bottom: 0;
+
+}
+
+.imgAutoScreamers{
+    max-width: 60vw;
+
 }
 
 @media (max-width: 768px) {
