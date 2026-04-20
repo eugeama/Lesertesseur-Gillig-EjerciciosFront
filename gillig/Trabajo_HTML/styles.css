@@ -75,8 +75,9 @@ nav{
 .contenedor {
     display: flex;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
     gap: 40px;
+    margin-top: 50px;
 }
 
 .textoinicio-contenedor {
@@ -107,16 +108,13 @@ nav{
     border-radius: 10px;
     box-sizing: border-box;
     width: 100%;
-    margin-top: 150px;
 }
 
 .galeria_centrada{
-    flex-basis: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 5px;
-    margin-top: 100px;
 }
 
 .galeria{
