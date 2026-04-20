@@ -98,6 +98,18 @@ nav{
     width: 100%;
 }
 
+.textoinicio_index {
+    color: white;
+    text-align: left;
+    font-size: 1.3em;
+    font-family: boucherie-flared, sans-serif;
+    padding: 16px 18px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 150px;
+}
+
 .galeria_centrada{
     flex-basis: 60%;
     display: flex;
