@@ -62,6 +62,7 @@ body{
 }
 
 .introduccion{
+    margin-bottom: 0;
     background-color: var(--negro);
     display: flex;
     justify-content: flex-start;
@@ -92,4 +93,19 @@ body{
     text-align: right;
     margin: 0;
     padding-right: 8px;
+}
+
+.conocimientos{
+    margin-top: 0;
+    padding: 20px 0;
+    background-color: var(--grisOscuro);
+}
+
+.conocimientosTitulo{
+    color: var(--blanco);
+    font-family: "Oswald", sans-serif;
+    font-size: 100px;
+    text-align: center;
+    margin: 0;
+    padding: 20px 0;
 }
