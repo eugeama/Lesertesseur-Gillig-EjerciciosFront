@@ -4,6 +4,14 @@
     --rojo: rgb(255, 73, 73);
     --blanco: rgb(226, 226, 226);
     --margin: 0;
+    
+.conocimientosTitulo{
+    color: var(--blanco);
+    font-family: "Oswald", sans-serif;
+    font-size: 100px;
+    text-align: center;
+    margin: 0;
+    padding: 20px 0;
 }
 
 .oswald-oswaldFont {
@@ -65,10 +73,11 @@ body{
     margin-bottom: 0;
     background-color: var(--negro);
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     height: 90vh;
     padding-left: 20px;
+    padding-right: 40px;
 }
 
 .introduccionTexto{
@@ -82,8 +91,9 @@ body{
 }
 
 .introduccionRight{
-    flex: 0 0 35%;
     max-width: 35%;
+    display: flex;
+    width: 100%;
 }
 
 .introduccionDetalle{
@@ -93,7 +103,9 @@ body{
     text-align: right;
     margin: 0;
     padding-right: 8px;
+    width: 100%;
 }
+
 
 .conocimientos{
     margin-top: 0;
@@ -108,4 +120,42 @@ body{
     text-align: center;
     margin: 0;
     padding: 20px 0;
+}
+
+.conocimientosCards {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    padding: 20px;
+}
+
+.conocimientoCard {
+    background-color: var(--negro);
+    border-radius: 8px;
+    padding: 28px;
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.conocimientoLogo {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 16px;
+}
+.conocimientoNombre {
+    color: var(--rojo);
+    font-family: "Oswald", sans-serif;
+    font-size: 28px;
+    margin: var(--margin);
+    text-align: center;
+}
+.conocimientoDescripcion {
+    color: var(--blanco);
+    font-family: "Oswald", sans-serif;
+    font-size: 15px;
+    text-align: center;
+    margin: var(--margin);
+}
 }
