@@ -1,161 +1,197 @@
-:root{
+:root {
     --grisOscuro: rgb(67, 67, 67);
     --negro: rgb(36, 36, 36);
     --rojo: rgb(255, 73, 73);
     --blanco: rgb(226, 226, 226);
     --margin: 0;
-    
-.conocimientosTitulo{
-    color: var(--blanco);
-    font-family: "Oswald", sans-serif;
-    font-size: 100px;
-    text-align: center;
-    margin: 0;
-    padding: 20px 0;
-}
 
-.oswald-oswaldFont {
-  font-family: "Oswald", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 800;
-  font-style: normal;
-}
+    .conocimientosTitulo {
+        color: var(--blanco);
+        font-family: "Oswald", sans-serif;
+        font-size: 100px;
+        text-align: center;
+        margin: 0;
+        padding: 20px 0;
+    }
 
-body{
-    margin: var(--margin);
-}
+    .oswald-oswaldFont {
+        font-family: "Oswald", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 800;
+        font-style: normal;
+    }
 
-.header{
-    background-color: var(--rojo);
-    padding: 20px;
-}
+    body {
+        margin: var(--margin);
+    }
 
-.navList{
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex; 
-    gap: 20px; 
-    align-items: center;
-}
+    .header {
+        background-color: var(--rojo);
+        padding: 20px;
+    }
 
-.navLink{
-    color: var(--blanco);
-    text-decoration: none;
-    display: inline-block;
+    .navList {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+    }
 
-}
+    .navLink {
+        color: var(--blanco);
+        text-decoration: none;
+        display: inline-block;
 
-.heroSection{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--grisOscuro);
-    height: 65vh;
-}
+    }
 
-.heroTitulo{
-    color: var(--rojo);
-    font-size: 200px;
-    font-family: "Oswald", sans-serif;
-    margin: var(--margin);
-}
+    .heroSection {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--grisOscuro);
+        height: 65vh;
+    }
 
-.heroSubtitulo{
-    color: var(--blanco);
-    font-family: "Oswald", sans-serif;
-    margin: var(--margin);
-}
+    .heroTitulo {
+        color: var(--rojo);
+        font-size: 200px;
+        font-family: "Oswald", sans-serif;
+        margin: var(--margin);
+    }
 
-.introduccion{
-    margin-bottom: 0;
-    background-color: var(--negro);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 90vh;
-    padding-left: 20px;
-    padding-right: 40px;
-}
+    .heroSubtitulo {
+        color: var(--blanco);
+        font-family: "Oswald", sans-serif;
+        margin: var(--margin);
+    }
 
-.introduccionTexto{
-    color: var(--blanco);
-    font-family: "Oswald", sans-serif;
-    text-align: left;
-    align-items: left;
-    padding-left: 20px;
-    max-width: 30vw;
-    font-size: 90px;
-}
+    .introduccion {
+        margin-bottom: 0;
+        background-color: var(--negro);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 90vh;
+        padding-left: 20px;
+        padding-right: 40px;
+    }
 
-.introduccionRight{
-    max-width: 35%;
-    display: flex;
-    width: 100%;
-}
+    .introduccionTexto {
+        color: var(--blanco);
+        font-family: "Oswald", sans-serif;
+        text-align: left;
+        align-items: left;
+        padding-left: 20px;
+        max-width: 30vw;
+        font-size: 90px;
+    }
 
-.introduccionDetalle{
-    color: var(--blanco);
-    font-family: "Oswald", sans-serif;
-    font-size: 16px;
-    text-align: right;
-    margin: 0;
-    padding-right: 8px;
-    width: 100%;
-}
+    .introduccionRight {
+        max-width: 35%;
+        display: flex;
+        width: 100%;
+    }
+
+    .introduccionDetalle {
+        color: var(--blanco);
+        font-family: "Oswald", sans-serif;
+        font-size: 16px;
+        text-align: right;
+        margin: 0;
+        padding-right: 8px;
+        width: 100%;
+    }
 
 
-.conocimientos{
-    margin-top: 0;
-    padding: 20px 0;
-    background-color: var(--grisOscuro);
-}
+    .conocimientos {
+        margin-top: var(--margin);
+        padding: 20px;
+        background-color: var(--grisOscuro);
+        padding-bottom: 50px;
+    }
 
-.conocimientosTitulo{
-    color: var(--blanco);
-    font-family: "Oswald", sans-serif;
-    font-size: 100px;
-    text-align: center;
-    margin: 0;
-    padding: 20px 0;
-}
+    .conocimientosTitulo {
+        color: var(--blanco);
+        font-family: "Oswald", sans-serif;
+        font-size: 100px;
+        text-align: center;
+        margin: 0;
+        padding: 20px 0;
+    }
 
-.conocimientosCards {
-    display: flex;
-    justify-content: center;
-    gap: 32px;
-    padding: 20px;
-}
+    .conocimientosCards {
+        display: flex;
+        justify-content: center;
+        gap: 32px;
+        padding: 20px;
+    }
 
-.conocimientoCard {
-    background-color: var(--negro);
-    border-radius: 8px;
-    padding: 28px;
-    width: 220px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+    .conocimientoCard {
+        background-color: var(--negro);
+        border-radius: 8px;
+        padding: 28px;
+        width: 220px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
-.conocimientoLogo {
-    width: 60px;
-    height: 60px;
-    margin-bottom: 16px;
-}
-.conocimientoNombre {
-    color: var(--rojo);
-    font-family: "Oswald", sans-serif;
-    font-size: 28px;
-    margin: var(--margin);
-    text-align: center;
-}
-.conocimientoDescripcion {
-    color: var(--blanco);
-    font-family: "Oswald", sans-serif;
-    font-size: 15px;
-    text-align: center;
-    margin: var(--margin);
-}
+    .conocimientoLogo {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 16px;
+    }
+
+    .conocimientoNombre {
+        color: var(--rojo);
+        font-family: "Oswald", sans-serif;
+        font-size: 28px;
+        margin: var(--margin);
+        text-align: center;
+    }
+
+    .conocimientoDescripcion {
+        color: var(--blanco);
+        font-family: "Oswald", sans-serif;
+        font-size: 15px;
+        text-align: center;
+        margin: var(--margin);
+    }
+
+    .proyectosSection {
+        margin-top: var(--margin);
+        padding: 20px;
+        background-color: var(--grisOscuro);
+        padding-bottom: 50px;
+    }
+
+    .proyectosTitulo {
+        color: var(--blanco);
+        font-family: "Oswald", sans-serif;
+        font-size: 100px;
+        text-align: center;
+        margin: 0;
+        padding: 20px 0;
+    }
+
+    .proyectosCards {
+        display: flex;
+        justify-content: center;
+        gap: 32px;
+        padding: 20px;
+    }
+
+    .proyectosCard {
+        background-color: var(--negro);
+        border-radius: 8px;
+        padding: 28px;
+        width: 220px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
