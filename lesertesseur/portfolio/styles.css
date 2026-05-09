@@ -4,194 +4,395 @@
     --rojo: rgb(255, 73, 73);
     --blanco: rgb(226, 226, 226);
     --margin: 0;
+}
 
-    .conocimientosTitulo {
-        color: var(--blanco);
-        font-family: "Oswald", sans-serif;
-        font-size: 100px;
-        text-align: center;
-        margin: 0;
-        padding: 20px 0;
-    }
+.conocimientosTitulo {
+    color: var(--blanco);
+    font-family: "Oswald", sans-serif;
+    font-size: 100px;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
 
-    .oswald-oswaldFont {
-        font-family: "Oswald", sans-serif;
-        font-optical-sizing: auto;
-        font-weight: 800;
-        font-style: normal;
-    }
+.oswald-oswaldFont {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+}
 
-    body {
-        margin: var(--margin);
-    }
+.quicksand-quicksandFont {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
 
+body {
+    margin: var(--margin);
+}
+
+.header {
+    background-color: var(--rojo);
+    padding: 20px;
+
+    font-family: "Quicksand", sans-serif;
+}
+
+.navItem {
+    width: 100%;
+    box-sizing: border-box;
+    
+}
+
+.navList {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.navLink {
+    color: var(--blanco);
+    text-decoration: none;
+    display: inline-block;
+
+}
+
+.heroSection {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--grisOscuro);
+    height: 65vh;
+    overflow: hidden;
+
+}
+
+.heroTitulo {
+    color: var(--rojo);
+    font-size: 200px;
+    font-family: "Oswald", sans-serif;
+    margin: var(--margin);
+}
+
+.heroSubtitulo {
+    color: var(--blanco);
+    font-family: "Oswald", sans-serif;
+    margin: var(--margin);
+}
+
+.flavorTextPortfolio {
+    color: var(--blanco);
+    font-family: "Quicksand", sans-serif;
+    margin: var(--margin);
+    border-top: 0px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.flavorTextRight {
+    color: var(--blanco);
+    font-family: "Quicksand", sans-serif;
+    margin: var(--margin);
+    border-top: 0px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.introduccion {
+    margin-bottom: var(--margin);
+    background-color: var(--negro);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 40px;
+    max-height: 90vh;
+    position: relative;
+}
+
+.introduccionFoto {
+    max-height: 90vh;
+}
+
+.introduccionTexto {
+    color: var(--blanco);
+    font-family: "Oswald", sans-serif;
+    text-align: left;
+    align-items: left;
+    padding-left: 20px;
+    max-width: 30vw;
+    font-size: 90px;
+}
+
+.introduccionRight {
+    max-width: 30%;
+    display: flex;
+    width: 100%;
+}
+
+.introduccionDetalle {
+    color: var(--blanco);
+    font-family: "Oswald", sans-serif;
+    font-size: 16px;
+    text-align: right;
+    margin: 0;
+    padding-right: 8px;
+    /* width: 100%; */
+}
+
+
+.conocimientos {
+    margin-top: var(--margin);
+    padding: 20px;
+    background-color: var(--negro);
+    padding-bottom: 50px;
+    position: relative;
+}
+
+.conocimientosTitulo {
+    color: var(--blanco);
+    font-family: "Oswald", sans-serif;
+    font-size: 100px;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+.conocimientosCards {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    padding: 20px;
+}
+
+.conocimientoCard {
+    border: 2px solid var(--rojo);
+    border-radius: 8px;
+    padding: 28px;
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.conocimientoLogo {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 16px;
+}
+
+.conocimientoNombre {
+    color: var(--rojo);
+    font-family: "Oswald", sans-serif;
+    font-size: 28px;
+    margin: var(--margin);
+    text-align: center;
+}
+
+.conocimientoDescripcion {
+    color: var(--blanco);
+    font-family: "Oswald", sans-serif;
+    font-size: 15px;
+    text-align: center;
+    margin: var(--margin);
+}
+
+.proyectosSection {
+    margin-top: var(--margin);
+    padding: 20px;
+    background-color: var(--negro);
+    padding-bottom: 50px;
+    position: relative;
+}
+
+.proyectosTitulo {
+    color: var(--blanco);
+    font-family: "Oswald", sans-serif;
+    font-size: 100px;
+    text-align: center;
+    margin: 0;
+    padding: 20px 0;
+}
+
+.proyectosCards {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    padding: 20px;
+    /* flex-direction: column; */
+}
+
+.proyectosCard {
+    border: 2px solid var(--rojo);
+    border-radius: 8px;
+    padding: 28px;
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.proyectosLink {
+    color: var(--rojo);
+    font-family: "Oswald", sans-serif;
+    font-size: 15px;
+    text-align: center;
+    margin: var(--margin);
+    margin-top: 10px;
+}
+
+.footer {
+    width: 100%;
+    height: 10vh;
+    background-color: var(--rojo);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3vh;
+}
+
+@media (max-width: 480px) {
+ 
+    /* --- NAV --- */
     .header {
-        background-color: var(--rojo);
-        padding: 20px;
+        padding: 16px;
     }
-
+ 
     .navList {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        gap: 20px;
-        align-items: center;
-    }
-
-    .navLink {
-        color: var(--blanco);
-        text-decoration: none;
-        display: inline-block;
-
-    }
-
-    .heroSection {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
         justify-content: center;
-        align-items: center;
-        background-color: var(--grisOscuro);
-        height: 65vh;
     }
-
+ 
+    .navLink {
+        font-size: 14px;
+    }
+ 
+    .heroSection {
+        height: 40vh;
+        padding: 16px;
+    }
+ 
     .heroTitulo {
-        color: var(--rojo);
-        font-size: 200px;
-        font-family: "Oswald", sans-serif;
-        margin: var(--margin);
+        font-size: 60px;
     }
-
+ 
     .heroSubtitulo {
-        color: var(--blanco);
-        font-family: "Oswald", sans-serif;
-        margin: var(--margin);
+        font-size: 14px;
     }
-
+ 
+    .flavorTextPortfolio {
+        font-size: 9px;
+        top: 10px;
+        left: 10px;
+    }
+ 
+    .flavorTextRight {
+        font-size: 9px;
+        top: 10px;
+        right: 10px;
+    }
+ 
     .introduccion {
-        margin-bottom: 0;
-        background-color: var(--negro);
-        display: flex;
         justify-content: space-between;
         align-items: center;
-        height: 90vh;
-        padding-left: 20px;
-        padding-right: 40px;
+        padding-top: 50px;
+        padding-right: 16px;
+        padding-left: 16px;
+        max-height: none;
+        gap: 0;
     }
-
+ 
     .introduccionTexto {
-        color: var(--blanco);
-        font-family: "Oswald", sans-serif;
+        font-size: 32px;
         text-align: left;
-        align-items: left;
-        padding-left: 20px;
-        max-width: 30vw;
-        font-size: 90px;
+        padding-left: 0;
+        max-width: 30%;
     }
-
+ 
+    .introduccionFoto {
+        width: 40%;
+        max-height: 55vh;
+    }
+ 
     .introduccionRight {
-        max-width: 35%;
-        display: flex;
-        width: 100%;
+        max-width: 28%;
     }
-
+ 
     .introduccionDetalle {
-        color: var(--blanco);
-        font-family: "Oswald", sans-serif;
-        font-size: 16px;
         text-align: right;
-        margin: 0;
-        padding-right: 8px;
-        width: 100%;
+        font-size: 11px;
+        padding-right: 0;
     }
-
-
-    .conocimientos {
-        margin-top: var(--margin);
-        padding: 20px;
-        background-color: var(--grisOscuro);
-        padding-bottom: 50px;
-    }
-
+ 
+    /* --- CONOCIMIENTOS --- */
     .conocimientosTitulo {
-        color: var(--blanco);
-        font-family: "Oswald", sans-serif;
-        font-size: 100px;
-        text-align: center;
-        margin: 0;
-        padding: 20px 0;
+        font-size: 48px;
+        padding: 16px;
     }
-
+ 
     .conocimientosCards {
-        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
         justify-content: center;
-        gap: 32px;
-        padding: 20px;
+        gap: 16px;
+        padding: 12px;
     }
-
+ 
     .conocimientoCard {
-        background-color: var(--negro);
-        border-radius: 8px;
-        padding: 28px;
-        width: 220px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        width: 50%;
+        max-width: none;
+        padding: 16px 12px;
     }
-
+ 
     .conocimientoLogo {
-        width: 60px;
-        height: 60px;
-        margin-bottom: 16px;
+        width: 44px;
+        height: 44px;
     }
-
+ 
     .conocimientoNombre {
-        color: var(--rojo);
-        font-family: "Oswald", sans-serif;
-        font-size: 28px;
-        margin: var(--margin);
-        text-align: center;
+        font-size: 18px;
     }
-
+ 
     .conocimientoDescripcion {
-        color: var(--blanco);
-        font-family: "Oswald", sans-serif;
-        font-size: 15px;
-        text-align: center;
-        margin: var(--margin);
+        font-size: 12px;
     }
-
-    .proyectosSection {
-        margin-top: var(--margin);
-        padding: 20px;
-        background-color: var(--grisOscuro);
-        padding-bottom: 50px;
-    }
-
+ 
+    /* --- PROYECTOS --- */
     .proyectosTitulo {
-        color: var(--blanco);
-        font-family: "Oswald", sans-serif;
-        font-size: 100px;
-        text-align: center;
-        margin: 0;
-        padding: 20px 0;
+        font-size: 48px;
+        padding: 16px;
     }
-
+ 
     .proyectosCards {
-        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
         justify-content: center;
-        gap: 32px;
-        padding: 20px;
+        gap: 16px;
+        padding: 12px;
     }
-
+ 
     .proyectosCard {
-        background-color: var(--negro);
-        border-radius: 8px;
-        padding: 28px;
-        width: 220px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        width: 50%;
+        max-width: none;
+        padding: 16px;
+    }
+ 
+    .proyectosLink {
+        font-size: 12px;
+    }
+ 
+    .footer {
+        height: auto;
+        padding: 20px;
     }
 }
