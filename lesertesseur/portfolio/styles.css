@@ -29,6 +29,10 @@
     font-style: normal;
 }
 
+.hmtl {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: var(--margin);
 }
@@ -43,7 +47,7 @@ body {
 .navItem {
     width: 100%;
     box-sizing: border-box;
-    
+
 }
 
 .navList {
@@ -70,7 +74,7 @@ body {
     background-color: var(--grisOscuro);
     height: 65vh;
     overflow: hidden;
-
+    flex-direction: column;
 }
 
 .heroTitulo {
@@ -78,6 +82,7 @@ body {
     font-size: 200px;
     font-family: "Oswald", sans-serif;
     margin: var(--margin);
+
 }
 
 .heroSubtitulo {
@@ -219,7 +224,7 @@ body {
     font-size: 100px;
     text-align: center;
     margin: 0;
-    padding: 20px 0;
+    padding: 20px;
 }
 
 .proyectosCards {
@@ -253,7 +258,8 @@ body {
     width: 100%;
     height: 10vh;
     background-color: var(--rojo);
-    font-family: Arial, Helvetica, sans-serif;
+    color: var(--blanco);
+    font-family: "Quicksand", sans-serif;
     text-align: center;
     box-sizing: border-box;
     display: flex;
@@ -262,46 +268,99 @@ body {
     gap: 3vh;
 }
 
+.educacionSection {
+    background-color: var(--negro);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.educacionTitulo {
+    font-family: "Oswald", sans-serif;
+    color: var(--blanco);
+    margin: var(--margin);
+    text-align: center;
+    font-size: 100px;
+    padding-bottom: 80px;
+}
+
+.educacionFondo {
+    background-color: var(--rojo);
+    font-family: "Oswald", sans-serif;
+    font-size: 32px;
+    display: flex;
+    /* justify-content: flex-start; */
+    /* gap: 32px; */
+    padding: 20px;
+    width: 60%;
+    align-items: left;
+}
+
+.logoEducacion {
+    max-width: 3vw;
+    right: 100px;
+}
+
+.tituloEducacion {
+    margin: var(--margin);
+    font-size: 70px;
+    position: relative;
+}
+
+.descripcionEducacion {
+    color: var(--blanco);
+    font-family: "Oswald", sans-serif;
+    font-size: 16px;
+    text-align: left;
+    margin: var(--margin);
+    max-width: 60%;
+    display: flex;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: 20px;
+}
+
 @media (max-width: 480px) {
- 
-    /* --- NAV --- */
+
     .header {
         padding: 16px;
     }
- 
+
     .navList {
         justify-content: center;
     }
- 
+
     .navLink {
         font-size: 14px;
     }
- 
+
     .heroSection {
         height: 40vh;
         padding: 16px;
     }
- 
+
     .heroTitulo {
         font-size: 60px;
     }
- 
+
     .heroSubtitulo {
         font-size: 14px;
     }
- 
+
     .flavorTextPortfolio {
         font-size: 9px;
         top: 10px;
         left: 10px;
     }
- 
+
     .flavorTextRight {
         font-size: 9px;
         top: 10px;
         right: 10px;
     }
- 
+
     .introduccion {
         justify-content: space-between;
         align-items: center;
@@ -311,35 +370,34 @@ body {
         max-height: none;
         gap: 0;
     }
- 
+
     .introduccionTexto {
         font-size: 32px;
         text-align: left;
         padding-left: 0;
         max-width: 30%;
     }
- 
+
     .introduccionFoto {
         width: 40%;
         max-height: 55vh;
     }
- 
+
     .introduccionRight {
         max-width: 28%;
     }
- 
+
     .introduccionDetalle {
         text-align: right;
         font-size: 11px;
         padding-right: 0;
     }
- 
-    /* --- CONOCIMIENTOS --- */
+
     .conocimientosTitulo {
         font-size: 48px;
         padding: 16px;
     }
- 
+
     .conocimientosCards {
         flex-direction: row;
         flex-wrap: wrap;
@@ -347,32 +405,31 @@ body {
         gap: 16px;
         padding: 12px;
     }
- 
+
     .conocimientoCard {
         width: 50%;
         max-width: none;
-        padding: 16px 12px;
+        padding: 16px;
     }
- 
+
     .conocimientoLogo {
         width: 44px;
         height: 44px;
     }
- 
+
     .conocimientoNombre {
         font-size: 18px;
     }
- 
+
     .conocimientoDescripcion {
         font-size: 12px;
     }
- 
-    /* --- PROYECTOS --- */
+
     .proyectosTitulo {
         font-size: 48px;
         padding: 16px;
     }
- 
+
     .proyectosCards {
         flex-direction: row;
         flex-wrap: wrap;
@@ -380,17 +437,38 @@ body {
         gap: 16px;
         padding: 12px;
     }
- 
+
     .proyectosCard {
         width: 50%;
-        max-width: none;
         padding: 16px;
     }
- 
+
     .proyectosLink {
         font-size: 12px;
     }
- 
+
+    .educacionTitulo {
+        font-size: 48px;
+        padding: 16px;
+        padding-bottom: 32px;
+        padding-top: 32px;
+    }
+
+    .educacionFondo {
+        width: 60%;
+        padding: 16px;
+    }
+
+    .tituloEducacion {
+        font-size: 28px;
+    }
+
+    .descripcionEducacion {
+        max-width: 100%;
+        font-size: 13px;
+        padding: 20px;
+    }
+
     .footer {
         height: auto;
         padding: 20px;
