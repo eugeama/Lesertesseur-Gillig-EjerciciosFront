@@ -1,15 +1,11 @@
 ﻿@font-face {
     font-family: 'ThisBlog';
     src: url('fonts/this_blog/ThisBlog.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
 }
 
 @font-face {
     font-family: 'MilkyNice';
     src: url('fonts/milky_nice/MilkyNice.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
 }
 
 body {
@@ -156,7 +152,7 @@ header {
 
 .habilidades {
     padding: 80px 60px;
-    background-color: #fdeef5;
+    background-color: #f7eaef;
 }
 
 .titulo-seccion {
@@ -238,7 +234,7 @@ header {
 
 .proyectos {
     padding: 80px 60px;
-    background-color: #FFF8F0;
+    background-color: #ffffff;
 }
 
 .proyectos-grid {
@@ -293,7 +289,6 @@ header {
     font-size: 0.95rem;
     line-height: 1.7;
     color: #6b4455;
-    margin: 0;
     flex: 1;
 }
 
@@ -322,7 +317,17 @@ header {
     justify-content: center;
     gap: 40px;
     padding: 80px 60px;
-    background-color: #fdeef5;
+    background-color: #f7eaef;
+}
+
+.edu-exp .habilidad-card {
+    width: auto;
+    flex: 1;
+    min-width: 220px;
+    max-width: 360px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-color: #e9c8d5
 }
 
 .edu-exp-columna {
