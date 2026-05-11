@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+    <title>Portofolio de Amy <3</title>
+</head>
+<body>
+
+    <header>
+        <nav class="nav-links">
+            <a href="#sobre-mi" class="nav-link">Sobre mí</a>
+            <a href="#habilidades" class="nav-link">Habilidades</a>
+            <a href="#proyectos" class="nav-link">Proyectos</a>
+            <a href="#educacion-experiencia" class="nav-link">Educación y experiencia</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="inicio" id="sobre-mi">
+            <div class="foto-contenedor">
+                <img class="foto-placeholder" src="fotos\IMG-20260509-WA0025.jpg" alt="Es un dibujo que me regaló una amiga <3" />
+            </div>
+            <div class="inicio-derecha">
+                <h1 class="nombre-titulo">Amalia Gillig</h1>
+                <p class="rol">Desarrolladora Web</p>
+                <p class="bio">Estudiante de último año en el Instituto Politécnico Modelo. Me gusta mucho dibujar y me interesa todo lo relacionado con la psicología.</p>
+                <div class="contacto-lista">
+                    <p class="contacto-item"><span class="contacto-label">Email: amaliagillig2508@gmail.com</span> </p>
+                    <p class="contacto-item"><span class="contacto-label">Teléfono: +54 9 11 2887-1041</span></p>
+                    <p class="contacto-item"><span class="contacto-label">GitHub:</span> <a href="https://github.com/eugeama" class="contacto-label">eugeama</a></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="habilidades" id="habilidades">
+            <h2 class="titulo-seccion">Habilidades</h2>
+            <div class="carousel-wrapper">
+                <button class="carousel-btn" id="btnPrev"></button>
+                <div class="carousel-track-container">
+                    <div class="habilidades-contenedor" id="carouselTrack">
+
+                        <div class="habilidad-card">
+                            <img class="habilidad-img" src="fotos\HTML5_logo_and_wordmark.svg.png" alt="HTML5">
+                            <p class="habilidad-nombre">HTML</p>
+                        </div>
+
+                        <div class="habilidad-card">
+                            <img class="habilidad-img" src="fotos\css.png" alt="CSS3">
+                            <p class="habilidad-nombre">CSS</p>
+                        </div>
+
+                        <div class="habilidad-card">
+                            <img class="habilidad-img" src="fotos\javascript-logo-javascript-icon-transparent-free-png.webp" alt="JavaScript">
+                            <p class="habilidad-nombre">JavaScript</p>
+                        </div>
+
+                        <div class="habilidad-card">
+                            <img class="habilidad-img" src="fotos\p-80-java.webp" alt="Java">
+                            <p class="habilidad-nombre">Java</p>
+                        </div>
+                        <div class="habilidad-card">
+                            <img class="habilidad-img" src="fotos\Python-logo-notext.svg.png" alt="Python">
+                            <p class="habilidad-nombre">Python</p>
+                        </div>
+                        <div class="habilidad-card">
+                            <img class="habilidad-img" src="fotos\org.godotengine.Godot.desktop.png" alt="Godot">
+                            <p class="habilidad-nombre">Godot</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-btn" id="btnNext"></button>
+            </div>
+        </section>
+
+        <section class="proyectos" id="proyectos">
+            <h2 class="titulo-seccion">Proyectos</h2>
+            <div class="proyectos-grid">
+
+                <div class="proyecto-card">
+                    <div class="proyecto-img-placeholder"></div>
+                    <div class="proyecto-info">
+                        <h3 class="proyecto-titulo">Ghost Mischief</h3>
+                        <p class="proyecto-descripcion">Un puzzle inspirado en Twisted Wonderland donde jugás como un personaje llamado Lucille, y tenés que ir ayudando a distintos personajes del juego a recuperar cosas que fantasmas del colegio escondieron.</p>
+                        <a href="https://github.com/eugeama/Puzzle-Gillig" class="proyecto-btn">Ir al proyecto</a>
+                    </div>
+                </div>
+
+                <div class="proyecto-card">
+                    <div class="proyecto-img-placeholder"></div>
+                    <div class="proyecto-info">
+                        <h3 class="proyecto-titulo">Piedra, Papel o Demonio</h3>
+                        <p class="proyecto-descripcion">Un piedra papel o tijera que reconoce los movimientos de tu mano y te deja jugar contra la computadora.</p>
+                        <a href="https://github.com/eugeama/proyecto_informatico_2025" class="proyecto-btn">Ir al proyecto</a>
+                    </div>
+                </div>
+
+                <div class="proyecto-card">
+                    <div class="proyecto-img-placeholder"></div>
+                    <div class="proyecto-info">
+                        <h3 class="proyecto-titulo">Policlub</h3>
+                        <p class="proyecto-descripcion">Una página de gimnasio que fue diseñada desde 0. Backend, aunque tiene algunas pruebas de conexión de endpoints con un frontend también hecho a mano.</p>
+                        <a href="https://github.com/eugeama/TPIntegrador-PoliClub" class="proyecto-btn">Ir al proyecto</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="edu-exp" id="educacion-experiencia">
+            <div class="edu-exp-columna">
+                <h2 class="edu-exp-titulo">Educación</h2>
+                <ul class="edu-exp-lista">
+                    <li>
+                        <span>Instituto Politécnico Modelo - 2021-2026</span>
+                    </li>
+                    <li>
+                        <span>New Concept School of English - 2014-2025</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="edu-exp-columna">
+                <h2 class="edu-exp-titulo">Experiencia</h2>
+                <ul class="edu-exp-lista">
+                    <li>
+                        <span>Pasantía en Leónides Ibera - 2026</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="edu-exp-columna">
+                <h2 class="edu-exp-titulo">Títulos</h2>
+                <ul class="edu-exp-lista">
+                    <li>
+                        <span>Técnica en computación</span>
+                    </li>
+                    <li>
+                        <span>CAE</span>
+                    </li>
+                    <li>
+                        <span>FCE</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p class="footer-texto">Amalia Gillig - 2025</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
