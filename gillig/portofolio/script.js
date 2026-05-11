@@ -2,6 +2,21 @@ var track = document.getElementById('carouselTrack');
 var btnPrev = document.getElementById('btnPrev');
 var btnNext = document.getElementById('btnNext');
 var visibleCount = 3;
+
+function updateVisibleCount() {
+    if (window.innerWidth <= 600) {
+        visibleCount = 1;
+    } else {
+        visibleCount = 3;
+    }
+}
+
+window.addEventListener('resize', function() {
+    updateVisibleCount();
+    updateCarousel();
+});
+
+updateVisibleCount();
 var currentIndex = 0;
 
 function getCardStep() {

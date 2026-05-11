@@ -1,24 +1,33 @@
-﻿@font-face {
+﻿:root{
+    --colorVino: #6b4455;
+    --blanco: #ffffff;
+    --rosita: #f5e1e8;
+    --rositaFuerte: #c96b8e;
+    --rosaIntermedio: #e8a0c0;
+    --rosaOscuro: #a07080;
+}
+
+@font-face {
     font-family: 'ThisBlog';
     src: url('fonts/this_blog/ThisBlog.otf') format('opentype');
 }
 
 @font-face {
     font-family: 'MilkyNice';
-    src: url('fonts/milky_nice/MilkyNice.otf') format('opentype');
+    src: url('fonts/milky_nice/MilkyNice-Clean.otf') format('opentype');
 }
 
 body {
     margin: 0;
     padding: 0;
-    background-color: #FFF8F0;
-    color: #6b4455;
-    font-family: 'MilkyNice', sans-serif;
+    background-color: var(---blanco);
+    color: var(--rositaFuerte);
+    font-family: 'MilkyNice', 'sans-serif';
     line-height: 1.6;
 }
 
 h1, h2, h3 {
-    font-family: 'ThisBlog', serif;
+    font-family: 'ThisBlog', 'serif';
     font-weight: normal;
     margin: 0;
 }
@@ -34,8 +43,8 @@ header {
     align-items: center;
     min-height: 64px;
     padding: 12px 60px;
-    background-color: #ffffff;
-    border-bottom: 2px solid #F8BBD0;
+    background-color: var(--blanco);
+    border-bottom: 2px solid ;
     position: sticky;
     top: 0;
     z-index: 100;
@@ -52,15 +61,14 @@ header {
 
 .nav-link {
     text-decoration: none;
-    color: #c96b8e;
+    color: var(--rositaFuerte);
     font-family: 'MilkyNice', sans-serif;
     font-size: 0.95rem;
-    letter-spacing: 0.5px;
     transition: color 0.2s;
 }
 
 .nav-link:hover {
-    color: #e8a0c0;
+    color: var(--rosaIntermedio);
 }
 
 .inicio {
@@ -70,16 +78,16 @@ header {
     align-items: flex-start;
     gap: 40px;
     padding: 80px 60px;
-    background-color: #ffffff;
+    background-color: var(--blanco);
 }
 
 .foto-placeholder {
     width: 220px;
     max-width: 100%;
     height: 270px;
-    background-color: #fdeef5;
+    background-color: var(--blanco);
     border-radius: 24px;
-    border: 3px solid #F8BBD0;
+    border: 3px solid var(--rosita);
 }
 
 .inicio-derecha {
@@ -92,21 +100,21 @@ header {
 
 .nombre-titulo {
     font-size: 2.6rem;
-    color: #c96b8e;
+    color: var(--rositaFuerte);
     margin-bottom: 6px;
 }
 
 .rol {
     font-family: 'MilkyNice', sans-serif;
     font-size: 1rem;
-    color: #a07080;
+    color: var(--rosaOscuro);
     margin: 0 0 24px 0;
 }
 
 .separador {
     width: 50px;
     height: 4px;
-    background-color: #F8BBD0;
+    background-color: var(--rosita);
     border-radius: 4px;
     margin-bottom: 24px;
 }
@@ -114,7 +122,7 @@ header {
 .bio {
     font-size: 1.05rem;
     line-height: 1.8;
-    color: #6b4455;
+    color: var(--colorVino);
     margin: 0 0 12px 0;
 }
 
@@ -128,37 +136,37 @@ header {
 .contacto-item {
     margin: 0;
     font-size: 1rem;
-    color: #6b4455;
+    color: var(--colorVino);
 }
 
 .contacto-label {
     font-family: 'MilkyNice', sans-serif;
     font-size: 0.85rem;
-    color: #c96b8e;
+    color: var(--rositaFuerte);
     margin-right: 8px;
 }
 
 .contacto-link {
-    color: #c96b8e;
+    color: var(--rositaFuerte);
     text-decoration: none;
-    border-bottom: 2px solid #F8BBD0;
+    border-bottom: 2px solid var(--rosita);
     padding-bottom: 1px;
     transition: color 0.2s;
 }
 
 .contacto-link:hover {
-    color: #e8a0c0;
+    color: var(--rosaIntermedio);
 }
 
 .habilidades {
     padding: 80px 60px;
-    background-color: #f7eaef;
+    background-color: var(--rosita);
 }
 
 .titulo-seccion {
     text-align: center;
     font-size: 1.8rem;
-    color: #c96b8e;
+    color: var(--rositaFuerte);
     margin-bottom: 40px;
 }
 
@@ -186,9 +194,9 @@ header {
     flex-shrink: 0;
     width: 44px;
     height: 44px;
-    background-color: #ffffff;
-    border: 2px solid #F8BBD0;
-    color: #c96b8e;
+    background-color: var(--blanco);
+    border: 2px solid var(--rosita);
+    color: var(--rositaFuerte);
     font-size: 2rem;
     line-height: 1;
     border-radius: 50%;
@@ -201,7 +209,7 @@ header {
 }
 
 .carousel-btn:hover {
-    background-color: #fdeef5;
+    background-color: var(--blanco);
 }
 
 .habilidad-card {
@@ -213,7 +221,7 @@ header {
     width: 128px;
     flex-shrink: 0;
     padding: 24px 16px;
-    background-color: #ffffff;
+    background-color: var(--blanco);
     border-radius: 20px;
     box-shadow: 0 4px 16px rgba(248, 187, 208, 0.22);
 }
@@ -227,14 +235,14 @@ header {
 .habilidad-nombre {
     font-family: 'MilkyNice', sans-serif;
     font-size: 0.82rem;
-    color: #a07080;
+    color: var(--rosaOscuro);
     margin: 0;
     text-align: center;
 }
 
 .proyectos {
     padding: 80px 60px;
-    background-color: #ffffff;
+    background-color: var(--blanco);
 }
 
 .proyectos-grid {
@@ -250,9 +258,9 @@ header {
     flex: 1;
     min-width: 260px;
     max-width: 320px;
-    background-color: #ffffff;
+    background-color: var(--blanco);
     border-radius: 24px;
-    border: 2px solid #F8BBD0;
+    border: 2px solid var(--rosita);
     overflow: hidden;
     box-shadow: 0 6px 24px rgba(248, 187, 208, 0.18);
     display: flex;
@@ -268,7 +276,7 @@ header {
 .proyecto-img-placeholder {
     width: 100%;
     height: 170px;
-    background-color: #fdeef5;
+    background-color: var(--blanco);
 }
 
 .proyecto-info {
@@ -281,14 +289,14 @@ header {
 
 .proyecto-titulo {
     font-size: 1.3rem;
-    color: #c96b8e;
+    color: var(--rositaFuerte);
 }
 
 .proyecto-descripcion {
     font-family: 'MilkyNice', sans-serif;
     font-size: 0.95rem;
     line-height: 1.7;
-    color: #6b4455;
+    color: var(--colorVino);
     flex: 1;
 }
 
@@ -296,8 +304,8 @@ header {
     display: inline-block;
     margin-top: 8px;
     padding: 10px 22px;
-    background-color: #F8BBD0;
-    color: #ffffff;
+    background-color: var(--rosaIntermedio);
+    color: var(--blanco);
     text-decoration: none;
     border-radius: 50px;
     font-family: 'MilkyNice', sans-serif;
@@ -308,7 +316,7 @@ header {
 }
 
 .proyecto-btn:hover {
-    background-color: #e8a0c0;
+    background-color: var(--rositaFuerte);
 }
 
 .edu-exp {
@@ -317,7 +325,7 @@ header {
     justify-content: center;
     gap: 40px;
     padding: 80px 60px;
-    background-color: #f7eaef;
+    background-color: var(--rosita);
 }
 
 .edu-exp .habilidad-card {
@@ -327,7 +335,7 @@ header {
     max-width: 360px;
     align-items: flex-start;
     justify-content: flex-start;
-    background-color: #e9c8d5
+    background-color: #f3c5d5;
 }
 
 .edu-exp-columna {
@@ -338,7 +346,7 @@ header {
 
 .edu-exp-titulo {
     font-size: 1.5rem;
-    color: #c96b8e;
+    color: var(--rositaFuerte);
     margin-bottom: 24px;
 }
 
@@ -354,26 +362,26 @@ header {
 .edu-exp-lista li {
     font-size: 1rem;
     line-height: 1.7;
-    color: #6b4455;
+    color: var(--rositaFuerte);
 }
 
 .edu-exp-lista li span {
     display: block;
     font-size: 0.8rem;
-    color: #a07080;
+    color: var(--rositaFuerte);
     margin-top: 3px;
 }
 
 footer {
-    background-color: #ffffff;
-    border-top: 2px solid #F8BBD0;
+    background-color: var(--blanco);
+    border-top: 2px solid var(--rosita);
     padding: 22px 60px;
     text-align: center;
 }
 
 .footer-texto {
     font-family: 'MilkyNice', sans-serif;
-    color: #a07080;
+    color: var(--rosaOscuro);
     font-size: 0.85rem;
     margin: 0;
 }
@@ -403,5 +411,15 @@ footer {
 
     .edu-exp {
         padding: 40px 16px;
+    }
+
+    .habilidades-contenedor {
+        gap: 12px;
+    }
+    .habilidad-card {
+        width: 100%;
+        min-width: 0;
+        max-width: 100%;
+        box-sizing: border-box;
     }
 }
